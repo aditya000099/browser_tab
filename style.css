@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'nothing';
+    /* Change 'YourFontName' to your preferred font name */
+    src: url('assets/nothing-font-5x7.ttf') format('truetype');
+    src: url('assets/nothing-font-5x7.otf') format('opentype');
+    /* You can add more src declarations here for different file formats (e.g., woff, ttf) */
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: nothing;   
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    /* --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px; */
+  background-color: #191a1a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -200px; */
+    height: 50vh;
+    gap: 300px;
+}
+/* .container iframe {
+    border: 0;
+} */
+
+/* .date{
+    display: flex;
+} */
+/* .card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(25, 25, 25);
+} */
+
+.tztf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    /* margin-left: 380px;
+    margin-right: -550px; */
+    /* margin-bottom: 400px; */
+    font-size: 40px;
+}
+
+/* date-box */
+
+.date-card {
+    width: 190px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #0a0a0a;
+    border-radius: 8px;
+    z-index: 1;
+
+    /* mine  */
+    /* margin-left: 60%; */
+    /* margin-top: 100px; */
+}
+
+.date-tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.date-circle {
+    padding: 0 4px;
+}
+
+.date-box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.date-red {
+    background-color: #ff605c;
+}
+
+.date-yellow {
+    background-color: #ffbd44;
+}
+
+.date-green {
+    background-color: #00ca4e;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#weekDay {
+    font-size: 25px;
+    margin-top: 10px;
+}
+#day {
+    margin-top: -5px;
+}
+#month {
+    margin-top: -5px;
+}
+#daysLeft {
+    font-size: 55px;
+    margin-top: 15px;
+}
+#days-left-text {
+    font-size: 12px;
+    margin-top: -50px;
+}
+
+.dateBox{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* notepad */
+.page {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 300px;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #fff;
+    background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+    /* background-image: linear-gradient(#959595 1.1rem, #1f1f1f 1.2rem); */
+    background-size: 100% 1.2rem;
+    line-height: 1.2rem;
+    padding: 1.4rem 1.5rem 1.3rem 4.2rem;
+
+
+
+    /* mine  */
+    /* margin-left: 70px; */
+    /* margin-top: -300px; */
+  }
+  
+  .page::before,
+  .page::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .page::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+  }
+  
+  .page::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+  }
+  
+  .page:hover::before,
+  .page:hover::after {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  }
+  
+  .margin {
+    position: absolute;
+    border-left: 1px solid #d88;
+    height: 100%;
+    left: 3.3rem;
+    top: 0;
+  }
+  
+  .page p {
+    margin: 0;
+    text-indent: 0.1rem;
+    padding-bottom: 1.2rem;
+    color: black;
+    line-height: 20px;
+  }
+.main-search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -300px; */
+
+    font-family: nothing;
+}
+.searchbar {
+    /* margin-top: -300px; */
+    width: 320px;
+}
+
+  /* search bar  */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 8px;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-box {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    width: 250px;
+
+    font-family: nothing;
+    
+    
+  }
+  .search-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+  }
+  
